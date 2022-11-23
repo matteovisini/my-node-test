@@ -1,0 +1,67 @@
+@font-face {
+  font-family: windows;
+  src: url("assets/Windows Regular.ttf");
+}
+
+@font-face {
+  font-family: windowsBold;
+  src: url("assets/sysfont.ttf");
+}
+
+html, body {
+  user-select: none;
+  min-height: 100%;
+  overflow: hidden;
+  touch-action:pan-y;
+  margin: 0;
+  padding: 0;
+} 
+
+body { 
+  position: relative;}
+
+p{ fill: black;
+  font-family:windows;
+  line-height: 1;
+  font-size: 15px;
+}
+
+h1{
+  color:white;
+  margin:6px;
+  font-size: 20px;
+  font-family:windowsBold;
+}
+
+.myPopup{
+  background-color:#bdbdbd;
+  width:320px;
+  height:170px;
+  z-index:100;
+  border:2px outset black;
+  border-top:2px outset white;
+  border-left:2px outset white;
+}
+
+.testo1{
+  z-index:101;
+  margin:0px;
+}
+
+.barra{
+ background-color:#00007B;
+ width:310px;
+ height:30px;
+ z-index:101;
+}
+
+.warning{
+  z-index:101;
+  width:40px;
+  height: 40px;
+}
+
+.closePopup{
+  z-index:102;
+  width:30px;
+}
