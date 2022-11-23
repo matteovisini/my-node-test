@@ -1,0 +1,206 @@
+@font-face {
+  font-family: Suisse Intl;
+  src: url('SuisseIntl-Medium.otf');
+
+}
+body{
+    height: 100%;
+    width: 100%;
+    top:0%;
+    left:0%;
+    overflow: hidden;
+  }
+
+  h1, h2, a, p {
+    font-size: 25px;
+  font-weight:200;
+  margin:0;
+  }
+
+a.btn1 {
+  cursor:url('Risorsa 2.png'), pointer;
+}
+
+  .indice {
+  	display: flex;
+  	flex-direction: column;
+    margin-top: 15%;
+    left: 2%;
+  	width: 96%;
+  	position: absolute;
+    font-family: font_name, Suisse Intl, sans-serif;
+  }
+/*
+  @media (max-width:247px){
+    .about {
+    	display: flex;
+    	flex-direction: column;
+      margin-top: 15%;
+  left: 2%;
+    	width: 96%;
+    	position: absolute;
+      font-family: font_name, Suisse Intl, sans-serif;
+    }
+}
+*/
+  .about {
+    display: grid;
+    flex-direction: column;
+    margin-top: 10%;
+    left: 2%;
+    width: 96%;
+    position: absolute;
+    font-family: font_name, Suisse Intl, sans-serif;
+      justify-content: start;
+      z-index: -1;
+  }
+
+  .content {
+  	display: flex;
+  	flex-direction: column;
+  	width: 100%;
+  	position: relative;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+
+  .js .content__text-inner {
+  	opacity: 0;
+  }
+
+  .content {
+  	height: 100vh;
+  	justify-content: center;
+  }
+
+
+  a:link {
+    text-decoration: none;
+    color:#000;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color:#000;
+  }
+.grow {
+     font-size: 1em;
+     margin: 0;
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease;
+    transition: font-size .5s ease;
+  }
+
+.grow:hover{
+    font-size: 1.5em;}
+
+  .navbar1 {
+    font-family: font_name, Suisse Intl, sans-serif;
+    position: fixed;
+    top: 2%;
+    left:2%;
+    z-index: 2;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "logo works"
+  }
+
+  .feet {
+    grid-area: feet;
+    font-family: font_name, Suisse Intl, sans-serif;
+    position: fixed;
+    bottom:2%;
+    left:2%;
+    z-index: 2;
+    width: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "foot1 foot2";
+  }
+/* menù 4 lati*/
+  .mttvsn {
+    grid-area: logo;
+    display: grid;
+    justify-content: start;
+  }
+
+  .work {
+    grid-area: works;
+    display: grid;
+    justify-content: end;
+  }
+
+  .footer1 {
+
+    grid-area: foot1;
+    display: grid;
+    justify-content: start;
+  }
+
+  .footer2 {
+
+    grid-area: foot2;
+    display: grid;
+    justify-content: end;
+  }
+
+.output {
+  text-align:center;
+  font-family: font_name, Suisse Intl, sans-serif;
+  color:white;
+  h1 {
+    font-size:30px;
+  }
+}
+
+/* typewriting about */
+.typewriting {
+  height: 45px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 50px;
+  display: flex;
+
+}
+.typewritingdinamico {
+  color: #000;
+  border-right: 2px solid;
+  animation: blink 500ms ease infinite;
+}
+
+.testa{
+    display: none;
+
+
+}
+.mostra {
+  color:#000
+  z-index: 999
+  bottom
+}
+.mostra:hover div {
+display: block;
+z-index: 1
+position:inherit;
+}
+.statico{
+  position: absolute;
+  z-index: -1;
+
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right-color: transparent;
+  }
+
+  50% {
+    border-right-color: black;
+  }
+}
