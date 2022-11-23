@@ -19,6 +19,7 @@ var borderDown;
 var borderTop;
 var borderLeft;
 var border;
+let bg = 255
 
 //variables to make the help hint disappear
 let opacityHelp =255;
@@ -26,6 +27,15 @@ let a = 1;
 
 //variables for the html popup
 let myPopup, testo, warning, barra, testo2, closePopup;
+
+//server stuff
+let clientSocket=io();
+clientSocket.on("connect",newConnection)
+
+function newConnection(){
+  console.log("wild pokemon appeared!")
+}
+
 
 function preload() {
   //images
@@ -568,7 +578,7 @@ function mouseDragged() {
 
 function draw() {
 
- background(255);
+ background(bg);
  colorSelector();
 
   //shows the pixels and the elements made by the engine in the canvas
@@ -583,6 +593,10 @@ function draw() {
   colorSelector();
   noStroke(255);
  
+  /*if (pos.x == borderDown.position.x ){
+    bg = 255,0,0
+  }*/
+  
   //borders
   fill('#7b7b7b');
   rect(borderDown.position.x, borderDown.position.y, width-90, 5);
